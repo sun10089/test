@@ -7,6 +7,7 @@ class Test_1:
         print("12132")
         assert True
     def test_002(self):
-        with open("./1.jpg","rb") as f:
-          allure.attach("图片",f.read(),allure.attach_type.JPG)
+        # with open("./1.jpg","rb") as f:
+        #   allure.attach("图片",f.read(),allure.attach_type.JPG)
+        allure.attach("图片", "图片描述", allure.attach_type.JPG)
         assert True
